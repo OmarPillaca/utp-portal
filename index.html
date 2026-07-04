@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTP+Portal - Matrícula Agosto 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Barra lateral izquierda -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button class="menu-btn">☰</button>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="icon">🏠</span> Inicio
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">🗓️</span> Calendario
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📚</span> Cursos
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">💲</span> Pagos
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📄</span> Trámites
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⋯</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <!-- Barra superior blanca con logo y usuario -->
+            <header class="top-bar">
+                <div class="logo-area">
+                    <img src="utplogoportal.jpg" alt="UTP+Portal" class="logo-img">
+                </div>
+                <div class="user-area">
+                    <span class="help-icon">?</span>
+                    <div class="user-info">
+                        <span>Hola, Jhadira</span>
+                        <span class="user-code">U24220292</span>
+                    </div>
+                    <div class="user-avatar">👤</div>
+                </div>
+            </header>
+
+            <!-- Área de contenido principal -->
+            <div class="content-wrapper">
+                <!-- Enlace volver atrás -->
+                <div class="back-link">
+                    <a href="#">← Atrás</a>
+                </div>
+
+                <!-- Título y descripción -->
+                <section class="page-header">
+                    <h1>Cursos y horarios de matrícula Agosto 2026</h1>
+                    <p class="page-description">
+                        Visualiza todos los cursos y horarios disponibles para tu matrícula de Agosto 2026. La información mostrada, considera la aprobación de tus cursos del ciclo actual, caso contrario la oferta variará. Aplica para los alumnos reinscritos y reincorporados (no ingresantes).
+                    </p>
+                    <div class="info-note">
+                        <span class="info-icon">ℹ️</span>
+                        Esta información es referencial y pueden variar al momento de matricularte según las vacantes.
+                    </div>
+                </section>
+
+                <!-- Tabla de cursos - TU CONTENIDO ORIGINAL COMPLETO -->
+                <section class="courses-section">
+                    <table class="courses-table">
+                        <thead>
+                            <tr>
+                                <th>Curso</th>
+                                <th>Horas semanales</th>
+                                <th>Créditos</th>
+                                <th>Ciclo</th>
+                                <th>Tipo</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Curso 1 -->
+                            <tr class="course-row">
+                                <td>100000MK53 - Ventas</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>Obligatorio</td>
+                                <td>
+                                    <button class="btn-toggle" data-target="horarios-ventas">Ver horarios</button>
+                                </td>
+                            </tr>
+                            <tr class="schedules-row" id="horarios-ventas">
+                                <td colspan="6">
+                                    <table class="schedules-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sección</th>
+                                                <th>Horario</th>
+                                                <th>Docente</th>
+                                                <th>Modalidad de curso</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>46192</td>
+                                                <td>Miércoles 20:15 p.m - 21:45 p.m<br>Viernes 18:30 p.m - 19:30 p.m</td>
+                                                <td>Mariñas Valle, Jose Luis</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>30346</td>
+                                                <td>Lunes 18:00 p.m - 19:30 p.m<br>Martes 18:00 p.m - 19:30 p.m</td>
+                                                <td>Mariñas Valle, Jose Luis</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Curso 2 -->
+                            <tr class="course-row">
+                                <td>100000AN84 - Fundamentos de gestión retail</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>Obligatorio</td>
+                                <td>
+                                    <button class="btn-toggle" data-target="horarios-retail">Ver horarios</button>
+                                </td>
+                            </tr>
+                            <tr class="schedules-row" id="horarios-retail">
+                                <td colspan="6">
+                                    <table class="schedules-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sección</th>
+                                                <th>Horario</th>
+                                                <th>Docente</th>
+                                                <th>Modalidad de curso</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>30353</td>
+                                                <td>Martes 20:15 p.m - 22:30 p.m</td>
+                                                <td>Campos Aybar, Eve Maria</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>30344</td>
+                                                <td>Jueves 19:30 p.m - 21:45 p.m</td>
+                                                <td>Campos Aybar, Eve Maria</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Curso 3 -->
+                            <tr class="course-row">
+                                <td>100000AN83 - Marketing digital</td>
+                                <td>5</td>
+                                <td>4</td>
+                                <td>6</td>
+                                <td>Obligatorio</td>
+                                <td>
+                                    <button class="btn-toggle" data-target="horarios-marketing-digital">Ver horarios</button>
+                                </td>
+                            </tr>
+                            <tr class="schedules-row" id="horarios-marketing-digital">
+                                <td colspan="6">
+                                    <table class="schedules-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sección</th>
+                                                <th>Horario</th>
+                                                <th>Docente</th>
+                                                <th>Modalidad de curso</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>46191</td>
+                                                <td>Lunes 19:30 p.m - 21:45 p.m<br>Martes 18:00 p.m - 19:30 p.m</td>
+                                                <td>Neyra Torres, Norma Beatriz</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>51159</td>
+                                                <td>Miércoles 20:00 p.m - 22:15 p.m<br>Jueves 18:00 p.m - 19:30 p.m</td>
+                                                <td>Neyra Torres, Norma Beatriz</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Curso 4 - Negocios Digitales COMPLETO -->
+                            <tr class="course-row">
+                                <td>100000AN37 - Negocios digitales</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>Obligatorio</td>
+                                <td>
+                                    <button class="btn-toggle" data-target="horarios-negocios-digitales">Ver horarios</button>
+                                </td>
+                            </tr>
+                            <tr class="schedules-row" id="horarios-negocios-digitales">
+                                <td colspan="6">
+                                    <table class="schedules-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sección</th>
+                                                <th>Horario</th>
+                                                <th>Docente</th>
+                                                <th>Modalidad de curso</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>18231</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Camacho Orbegoso, Ever William</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>18229</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Camacho Orbegoso, Ever William</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>18228</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Camacho Orbegoso, Ever William</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14897</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Cherres Olivera, Jesus Mercedes</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14896</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Cherres Olivera, Jesus Mercedes</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14894</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Cherres Olivera, Jesus Mercedes</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14892</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Cherres Olivera, Jesus Mercedes</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14890</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Cherres Olivera, Jesus Mercedes</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>18241</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Chombo Jaco, Jose Alberto</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>18239</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Chombo Jaco, Jose Alberto</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>18237</td>
+                                                <td>Disponible las 24 horas durante el ciclo</td>
+                                                <td>Chombo Jaco, Jose Alberto</td>
+                                                <td><span class="badge virtual-247">Virtual 24/7</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Curso 5 -->
+                            <tr class="course-row">
+                                <td>100000MK54 - Estrategias de precio</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>6</td>
+                                <td>Obligatorio</td>
+                                <td>
+                                    <button class="btn-toggle" data-target="horarios-estrategias-precio">Ver horarios</button>
+                                </td>
+                            </tr>
+                            <tr class="schedules-row" id="horarios-estrategias-precio">
+                                <td colspan="6">
+                                    <table class="schedules-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sección</th>
+                                                <th>Horario</th>
+                                                <th>Docente</th>
+                                                <th>Modalidad de curso</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>30354</td>
+                                                <td>Lunes 18:30 p.m - 20:00 p.m<br>Miércoles 18:30 p.m - 20:00 p.m</td>
+                                                <td>Garcia Mendoza, Ricardo</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>30351</td>
+                                                <td>Lunes 18:00 p.m - 19:30 p.m<br>Martes 20:15 p.m - 21:45 p.m</td>
+                                                <td>Garcia Mendoza, Ricardo</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Curso 6 -->
+                            <tr class="course-row">
+                                <td>100000AN40 - Plan de mercado</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>Obligatorio</td>
+                                <td>
+                                    <button class="btn-toggle" data-target="horarios-plan-mercado">Ver horarios</button>
+                                </td>
+                            </tr>
+                            <tr class="schedules-row" id="horarios-plan-mercado">
+                                <td colspan="6">
+                                    <table class="schedules-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sección</th>
+                                                <th>Horario</th>
+                                                <th>Docente</th>
+                                                <th>Modalidad de curso</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>46189</td>
+                                                <td>Viernes 19:30 p.m - 21:45 p.m</td>
+                                                <td>Camacho Leon, Gema Lesthaly</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>30348</td>
+                                                <td>Jueves 19:30 p.m - 21:45 p.m</td>
+                                                <td>Camacho Leon, Gema Lesthaly</td>
+                                                <td><span class="badge presencial">Presencial</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Información de modalidades -->
+                <section class="modality-info">
+                    <h3>Modalidad de curso</h3>
+
+                    <div class="modality-block presencial">
+                        <h4>Presencial</h4>
+                        <ul>
+                            <li>Las clases presenciales se realizarán en el campus en la ubicación indicada en el horario.</li>
+                            <li>Todo el material estará disponible en la plataforma UTP+class.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modality-block virtual-envivo">
+                        <h4>Virtual en vivo</h4>
+                        <ul>
+                            <li>Las clases virtuales en vivo se llevarán a cabo por la plataforma de Zoom en el horario seleccionado.</li>
+                            <li>Las clases quedarán grabadas por si no pudiste conectarte.</li>
+                            <li>Todo el material estará disponible en la plataforma UTP+class.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modality-block virtual-247">
+                        <h4>Virtual 24/7</h4>
+                        <ul>
+                            <li>El curso lo llevarás en la plataforma UTP+class a tu ritmo según tu disponibilidad.</li>
+                            <li>Todos los materiales de los cursos están disponibles 24/7, todos los días de la semana.</li>
+                            <li>Tu docente te acompañará y resolverá tus dudas en el momento en que lo necesites.</li>
+                            <li>Este curso no se visualizará en tu horario, con día y hora, porque tienes la flexibilidad de conectarte en cualquier momento.</li>
+                        </ul>
+                    </div>
+
+                    <p class="modality-note">
+                        ℹ️ Los materiales de los cursos de todas las modalidades estarán disponibles en la plataforma UTP+class.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

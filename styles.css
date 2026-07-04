@@ -1,0 +1,366 @@
+/* ---------- ESTILOS GENERALES ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    line-height: 1.5;
+    color: #111827;
+}
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ---------- BARRA LATERAL IZQUIERDA ---------- */
+.sidebar {
+    width: 60px;
+    background-color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    height: 60px;
+    background: linear-gradient(180deg, #ff5c5c 0%, #e63946 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 12px 4px;
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 11px;
+    text-align: center;
+    min-height: 60px;
+}
+
+.nav-item.active {
+    background-color: #e63946;
+    color: white;
+}
+
+.nav-item .icon {
+    font-size: 18px;
+}
+
+/* ---------- CONTENIDO PRINCIPAL ---------- */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra superior blanca */
+.top-bar {
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 28px;
+    width: auto;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.help-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-info span:first-child {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-code {
+    font-size: 12px;
+    color: #6b7280;
+    display: block;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Área de contenido */
+.content-wrapper {
+    background-color: #eef7fc;
+    padding: 24px;
+    flex: 1;
+}
+
+.back-link {
+    margin-bottom: 16px;
+}
+
+.back-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezado de página */
+.page-header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.page-description {
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.info-note {
+    background-color: #e0f2fe;
+    border: 1px solid #bae6fd;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #0369a1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.info-icon {
+    font-weight: bold;
+}
+
+/* Tabla de cursos */
+.courses-table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+}
+
+.courses-table th,
+.courses-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.courses-table thead th {
+    background-color: #f9fafb;
+    font-weight: 600;
+    color: #374151;
+}
+
+.course-row:hover {
+    background-color: #fafbfc;
+}
+
+.schedules-row {
+    display: none;
+    background-color: #fdfdff;
+}
+
+/* Botón Ver horarios */
+.btn-toggle {
+    background-color: #ffffff;
+    color: #6d28d9;
+    border: 1px solid #6d28d9;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-toggle::after {
+    content: "⌄";
+    font-size: 12px;
+}
+
+.btn-toggle:hover {
+    background-color: #f5f3ff;
+}
+
+.btn-toggle.active {
+    background-color: #6d28d9;
+    color: white;
+}
+
+.btn-toggle.active::after {
+    content: "⌃";
+}
+
+/* Tabla de horarios desplegados */
+.schedules-table {
+    width: calc(100% - 24px);
+    margin: 12px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.schedules-table th,
+.schedules-table td {
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+}
+
+/* Etiquetas de modalidad */
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.badge.presencial {
+    background-color: #ea580c;
+}
+
+.badge.virtual-envivo {
+    background-color: #0d9488;
+}
+
+.badge.virtual-247 {
+    background-color: #9333ea;
+}
+
+/* Bloque de modalidades */
+.modality-info {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.modality-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #111827;
+}
+
+.modality-block {
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    border-radius: 4px;
+}
+
+.modality-block h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: white;
+}
+
+.modality-block.presencial h4 {
+    background-color: #ea580c;
+}
+
+.modality-block.virtual-envivo h4 {
+    background-color: #0d9488;
+}
+
+.modality-block.virtual-247 h4 {
+    background-color: #9333ea;
+}
+
+.modality-block ul {
+    margin-left: 20px;
+    font-size: 13px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.modality-note {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #64748b;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+}
